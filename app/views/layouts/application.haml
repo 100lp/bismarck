@@ -1,0 +1,24 @@
+!!!
+%html
+  %head
+    %title Bismarck
+    = stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true
+    = javascript_include_tag "application", "data-turbolinks-track" => true
+    = csrf_meta_tags
+  %body
+    %header
+      %aside
+        .centered
+          = render 'layouts/logo'
+          = render 'layouts/telefon'
+      .border
+      %nav
+        = render 'layouts/nav'
+    #content
+      .centered
+        = yield
+    %footer
+      %nav
+        = render 'layouts/footer_nav'
+      .border
+      %aside

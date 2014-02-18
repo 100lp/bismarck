@@ -1,0 +1,197 @@
+.ui.ribbon.label
+  position: relative
+  margin: 0 .2em
+  left: -2rem
+  padding-left: 2rem
+  border-radius: 0 4px 4px 0
+  border-color: rgba(0,0,0,.15)
+
+.ui.label
+  font-size: .8125rem
+
+.ui.label
+  display: inline-block
+  vertical-align: middle
+  margin: -.25em .25em 0
+  background-color: #E8E8E8
+  border-color: #E8E8E8
+  padding: .5em .8em
+  color: rgba(0,0,0,.65)
+  text-transform: uppercase
+  font-weight: 400
+  border-radius: .325em
+  -webkit-box-sizing: border-box
+  -moz-box-sizing: border-box
+  -ms-box-sizing: border-box
+  box-sizing: border-box
+  -webkit-transition: background .1s linear
+  transition: background .1s linear
+
+.ui.labels .red.label:before, .ui.red.labels .label:before, .ui.red.label:before
+  background-color: #D95C5C!important
+
+.ui.ribbon.label
+  &:after
+    position: absolute
+    content: ""
+    top: 100%
+    right: 0
+    border-top: 0 solid transparent
+    border-right-width: 1em
+    border-right-color: inherit
+    border-right-style: solid
+    border-bottom: 1em solid transparent
+    border-left: 0 solid transparent
+    width: 0
+    height: 0
+
+body
+  padding: 0
+  margin: 0
+  background: white
+  font-family: PF Din TextPro Regular
+
+ul
+  padding: 0
+  margin: 0
+  list-style: none
+
+nav
+  height: 65px
+  width: 980px
+  margin: 0 auto
+
+a
+  text-decoration: none
+  padding: 0
+
+.centered
+  width: 980px
+  padding: 0 50px
+  margin: 0 auto
+
+.border
+  background: yellow
+  height: 2px
+  +box-shadow(0 0 2px black)
+
+div
+  +box-sizing(border-box)
+
+header
+  background: gray
+
+  aside
+    background: black
+    height: 100px
+
+    img
+      margin-top: 24px
+
+    .telefon
+      margin-top: 32px
+      float: right
+
+      p
+        margin: 0 0 4px
+        color: gray
+
+      .icons
+        li
+          float: left
+          margin-right: 7px
+
+          &:last-child
+            margin: 0
+
+          a
+            padding: 10px
+            display: block
+            background: url('icons.png')
+
+            &:hover
+              cursor: pointer
+
+            &.instagram
+              background-position: -3px -26px
+              &:hover
+                background-position: -3px -3px
+            &.vkontakte
+              background-position: -26px -26px
+              &:hover
+                background-position: -26px -3px
+            &.facebook
+              background-position: -49px -26px
+              &:hover
+                background-position: -49px -3px
+            &.twitter
+              background-position: -72px -26px
+              &:hover
+                background-position: -72px -3px
+  nav
+    text-align: center
+    ul
+      height: 65px
+      padding: 0 50px
+      display: table-cell
+      vertical-align: middle
+
+      li
+        margin-right: 76px
+        float: left
+
+        &:last-child
+          margin: 0 0 0 3px
+          float: right
+
+        a
+          color: #EAEAEA
+          font-size: 18px
+
+          &.active
+            +text-shadow(0 0 3px white)
+            position: relative
+
+          &:after
+            content: "ok"
+            position: absolute
+            bottom: -25px
+            left: 40%
+
+          &:hover, &:focus
+            +text-shadow(0 0 3px white)
+
+#content
+  min-height: 500px
+  +box-sizing(border-box)
+
+footer
+  background: gray
+  nav
+    width: 930px
+
+    ul
+      height: 65px
+      display: table-cell
+      vertical-align: middle
+      +box-sizing(border-box)
+      width: 100%
+
+      li
+        display: inline-block
+        text-align: center
+        width: 306px
+
+        &:first-child
+          text-align: left
+        &:last-child
+          text-align: right
+
+        a
+          color: white
+
+          &:hover
+            color: black
+  aside
+    background: black
+    height: 100px
