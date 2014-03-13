@@ -5,7 +5,7 @@ gem 'rails', '4.0.1'
 
 gem "rails_admin"
 
-gem "compass-rails", "~> 2.0.alpha.0"
+gem 'compass-rails', '~> 1.1.2'
 
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'

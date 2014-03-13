@@ -96,7 +96,7 @@ header
         margin: 0 0 4px
         color: gray
 
-      .icons
+      .soc-icons
         li
           float: left
           margin-right: 7px
@@ -131,44 +131,146 @@ header
   nav
     text-align: center
     ul
-      height: 65px
-      padding: 0 50px
-      display: table-cell
-      vertical-align: middle
+      height: 43px
+      padding: 23px 50px 0
 
       li
-        margin-right: 76px
         float: left
+        margin-right: 74px
+        height: 21px
 
         &:last-child
-          margin: 0 0 0 3px
+          margin: 0
           float: right
-
+        &.current
+          a
+            +text-shadow(0 0 3px white)
+            position: relative
+            background: url('str_02.png') no-repeat center bottom
+            z-index: 1
         a
           color: #EAEAEA
           font-size: 18px
-
-          &.active
-            +text-shadow(0 0 3px white)
-            position: relative
-
-          &:after
-            content: "ok"
-            position: absolute
-            bottom: -25px
-            left: 40%
+          padding: 22px 0
 
           &:hover, &:focus
             +text-shadow(0 0 3px white)
+            position: relative
+            background: url('str_02.png') no-repeat center bottom
+            z-index: 1
+
 
 #content
+  padding-top: 35px
+  +box-shadow(0 0 9px #393A39)
   min-height: 500px
   +box-sizing(border-box)
+  position: relative
 
+  .centered
+    padding: 0 30px
+    .znachki
+      text-align: center
+
+      a
+        display: inline-block
+        width: 110px
+        margin-right: 46px
+
+        &:last-child
+          margin: 0
+
+        div
+          width: 100% !important
+          height: 90px
+
+        p
+          text-align: center
+          display: block
+          color: gray
+          margin-top: 20px
+
+        .accessories
+          background: url('icons/accessories_b.png') no-repeat center top
+        .armchair
+          background: url('icons/armchair_b.png') no-repeat center top
+        .chair
+          background: url('icons/chair_b.png') no-repeat center top
+        .light
+          background: url('icons/light_b.png') no-repeat center top
+        .sofa
+          background: url('icons/sofa_b.png') no-repeat center top
+        .table
+          background: url('icons/table_b.png') no-repeat center top
+        .sundry
+          background: url('icons/sundry_b.png') no-repeat center top
+        .bibble
+          background: url('furniture/bibble_b.png') no-repeat center top
+        .cloakroom
+          background: url('furniture/cloakroom_b.png') no-repeat center top
+        .cupboard
+          background: url('furniture/cupboard_b.png') no-repeat center top
+        .hall
+          background: url('furniture/hall_b.png') no-repeat center top
+        .kids
+          background: url('furniture/kids_b.png') no-repeat center top
+        .lounge
+          background: url('furniture/lounge_b.png') no-repeat center top
+        .kitchen
+          background: url('furniture/kitchen_b.png') no-repeat center top
+
+        &:hover
+          cursor: pointer
+
+          p
+            color: black
+
+          .accessories
+            background: url('icons/accessories.png') no-repeat center top
+          .armchair
+            background: url('icons/armchair.png') no-repeat center top
+          .chair
+            background: url('icons/chair.png') no-repeat center top
+          .light
+            background: url('icons/light.png') no-repeat center top
+          .sofa
+            background: url('icons/sofa.png') no-repeat center top
+          .table
+            background: url('icons/table.png') no-repeat center top
+          .sundry
+            background: url('icons/sundry.png') no-repeat center top
+          .bibble
+            background: url('furniture/bibble.png') no-repeat center top
+          .cloakroom
+            background: url('furniture/cloakroom.png') no-repeat center top
+          .cupboard
+            background: url('furniture/cupboard.png') no-repeat center top
+          .hall
+            background: url('furniture/hall.png') no-repeat center top
+          .kids
+            background: url('furniture/kids.png') no-repeat center top
+          .lounge
+            background: url('furniture/lounge.png') no-repeat center top
+          .kitchen
+            background: url('furniture/kitchen.png') no-repeat center top
+    .mebel
+      a
+        width: 110px
+        margin-right: 20px
 footer
-  background: gray
+  background: #5f5e5e
   nav
     width: 930px
+    position: relative
+
+    &:before
+      content: ""
+      position: absolute
+      left: 423px
+      bottom: 46px
+      height: 47px
+      width: 79px
+      background: url('up-arrow.png') no-repeat center bottom
 
     ul
       height: 65px
