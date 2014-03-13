@@ -1,22 +1,50 @@
 .znachki.mebel
-  %a{href: '/'}
-    .bibble
-    %p БИБЛИОТЕКИ
-  %a
-    .cloakroom
-    %p ГАРДЕРОБНЫЕ
-  %a
-    .cupboard
-    %p ШКАФЫ
-  %a
-    .hall
-    %p ПРИХОЖИЕ
-  %a
-    .kids
-    %p ДЕТСКИЕ
-  %a
-    .kitchen
-    %p КУХНИ
-  %a
-    .lounge
-    %p ГОСТИННЫЕ
+  #tabs
+    %ul
+      %li
+        %a{href: "#tabs-1"}
+          .bibble
+          %p БИБЛИОТЕКИ
+      %li
+        %a{href: "#tabs-2"}
+          .cloakroom
+          %p ГАРДЕРОБНЫЕ
+      %li
+        %a{href: "#tabs-3"}
+          .cupboard
+          %p ШКАФЫ
+      %li
+        %a{href: "#tabs-4"}
+          .hall
+          %p ПРИХОЖИЕ
+      %li
+        %a{href: "#tabs-5"}
+          .kids
+          %p ДЕТСКИЕ
+      %li
+        %a{href: "#kitchen"}
+          .kitchen
+          %p КУХНИ
+      %li.last-child
+        %a{href: "#tabs-7"}
+          .lounge
+          %p ГОСТИННЫЕ
+
+      #tabs-1
+        .tab_content
+          .tab_left
+            = image_tag 'kitchen_classic.jpg'
+            %p
+              КЛАССИЧЕСКИЕ
+          .tab_right
+            = image_tag 'kitchen_nowtime.jpg'
+            %p
+              СОВРЕМЕННЫЕ
+      #tabs-2
+        %p Morbi tincidunt
+      #tabs-3
+        %p Mauris eleifend est
+      #kitchen
+
+
+
