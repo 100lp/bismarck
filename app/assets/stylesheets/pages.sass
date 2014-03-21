@@ -1,12 +1,116 @@
+.centered
+  .znachki
+    text-align: center
+
+    li
+      display: inline-block
+      width: 110px
+      margin-right: 46px
+
+      &:last-child
+        margin: 0
+
+      a
+        display: inline-block
+        width: 110px
+
+        div
+          width: 100% !important
+          height: 90px
+
+        p
+          text-align: center
+          display: block
+          color: gray
+          margin-top: 20px
+
+        .accessories
+          background: url('icons/accessories_b.png') no-repeat center top
+        .armchair
+          background: url('icons/armchair_b.png') no-repeat center top
+        .chair
+          background: url('icons/chair_b.png') no-repeat center top
+        .light
+          background: url('icons/light_b.png') no-repeat center top
+        .sofa
+          background: url('icons/sofa_b.png') no-repeat center top
+        .table
+          background: url('icons/table_b.png') no-repeat center top
+        .sundry
+          background: url('icons/sundry_b.png') no-repeat center top
+        .bibble
+          background: url('furniture/bibble_b.png') no-repeat center top
+        .cloakroom
+          background: url('furniture/cloakroom_b.png') no-repeat center top
+        .cupboard
+          background: url('furniture/cupboard_b.png') no-repeat center top
+        .hall
+          background: url('furniture/hall_b.png') no-repeat center top
+        .kids
+          background: url('furniture/kids_b.png') no-repeat center top
+        .lounge
+          background: url('furniture/lounge_b.png') no-repeat center top
+        .kitchen
+          background: url('furniture/kitchen_b.png') no-repeat center top
+
+        &:hover
+          cursor: pointer
+
+          p
+            color: black
+
+          .accessories
+            background: url('icons/accessories.png') no-repeat center top
+          .armchair
+            background: url('icons/armchair.png') no-repeat center top
+          .chair
+            background: url('icons/chair.png') no-repeat center top
+          .light
+            background: url('icons/light.png') no-repeat center top
+          .sofa
+            background: url('icons/sofa.png') no-repeat center top
+          .table
+            background: url('icons/table.png') no-repeat center top
+          .sundry
+            background: url('icons/sundry.png') no-repeat center top
+          .bibble
+            background: url('furniture/bibble.png') no-repeat center top
+          .cloakroom
+            background: url('furniture/cloakroom.png') no-repeat center top
+          .cupboard
+            background: url('furniture/cupboard.png') no-repeat center top
+          .hall
+            background: url('furniture/hall.png') no-repeat center top
+          .kids
+            background: url('furniture/kids.png') no-repeat center top
+          .lounge
+            background: url('furniture/lounge.png') no-repeat center top
+          .kitchen
+            background: url('furniture/kitchen.png') no-repeat center top
+  .mebel
+    li
+      width: 110px
+      margin-right: 20px
+
+      &.last-child
+        margin: 0
+
+
 article
   padding: 30px 35px
   margin: 25px 0
   +box-shadow(inset 0 0 4px #555)
   background: #f8f8f8
   background-image: url('rombik.jpg')
+
+  &:last-child
+    margin-bottom: 50px
+
   img
     float: left
     margin: 0 20px 0 0
+    width: 213px
+    border: 1px solid #AEAEAE
 
   .text
     border: 1px solid #AEAEAE
@@ -14,6 +118,28 @@ article
     display: inline-block
     background: white
     position: relative
+    height: 214px
+    width: 575px
+
+    &:after
+      bottom: -17px
+      content: ""
+      height: 44px
+      position: absolute
+      right: -13px
+      width: 105px
+      background: url('actions/action_arrow.png')
+
+    &.opened
+      width: 100%
+      height: 100%
+
+      img
+        margin-bottom: 20px
+
+      p
+        a
+          margin: 0
 
     h1
       color: #333
@@ -22,8 +148,16 @@ article
 
     p
       font-style: italic
+      line-height: 22px
       color: #555
       margin: 0
+
+      a
+        color: gray
+        margin-left: 10px
+
+        &:hover
+          color: #555
 
 #tabs
   .tab_content

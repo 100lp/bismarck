@@ -1,0 +1,46 @@
+.ui.ribbon.label
+  position: relative
+  margin: 0 .2em
+  left: -2rem
+  padding-left: 2rem
+  border-radius: 0 4px 4px 0
+  border-color: rgba(0,0,0,.15)
+
+.ui.label
+  font-size: .8125rem
+
+.ui.label
+  display: inline-block
+  vertical-align: middle
+  margin: -.25em .25em 0
+  background-color: #E8E8E8
+  border-color: #E8E8E8
+  padding: .5em .8em
+  color: rgba(0,0,0,.65)
+  text-transform: uppercase
+  font-weight: 400
+  border-radius: .325em
+  -webkit-box-sizing: border-box
+  -moz-box-sizing: border-box
+  -ms-box-sizing: border-box
+  box-sizing: border-box
+  -webkit-transition: background .1s linear
+  transition: background .1s linear
+
+.ui.labels .red.label:before, .ui.red.labels .label:before, .ui.red.label:before
+  background-color: #D95C5C!important
+
+.ui.ribbon.label
+  &:after
+    position: absolute
+    content: ""
+    top: 100%
+    right: 0
+    border-top: 0 solid transparent
+    border-right-width: 1em
+    border-right-color: inherit
+    border-right-style: solid
+    border-bottom: 1em solid transparent
+    border-left: 0 solid transparent
+    width: 0
+    height: 0

@@ -5,9 +5,9 @@
     = stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true
     = javascript_include_tag "application", "data-turbolinks-track" => true
     = csrf_meta_tags
-    -# %link{href: "//code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css", rel: "stylesheet"}/
     %script{src: "//code.jquery.com/jquery-1.9.1.js"}
     %script{src: "//code.jquery.com/ui/1.10.4/jquery-ui.js"}
+
   %body
     %header
       %aside
@@ -18,8 +18,7 @@
       %nav
         = render 'layouts/nav'
     #content
-      .centered
-        = yield
+      = yield
     %footer
       %nav
         = render 'layouts/footer_nav'

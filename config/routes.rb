@@ -13,4 +13,10 @@ Bismarck::Application.routes.draw do
   # under nav
   get '/mebel/kitchen', to: 'pages#kitchen'
 
+  # articles
+  get '/article-01', to: 'articles#article_01'
+  get '/article-02', to: 'articles#article_02'
+  get '/article-03', to: 'articles#article_03'
+  get '/article-04', to: 'articles#article_04'
+
 end
