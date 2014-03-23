@@ -121,14 +121,15 @@ article
     height: 214px
     width: 575px
 
-    &:after
-      bottom: -17px
-      content: ""
-      height: 44px
-      position: absolute
-      right: -13px
-      width: 105px
-      background: url('actions/action_arrow.png')
+    &.icon
+      &:after
+        bottom: -17px
+        content: ""
+        height: 44px
+        position: absolute
+        right: -13px
+        width: 105px
+        background: url('actions/action_arrow.png')
 
     &.opened
       width: 100%
@@ -140,6 +141,18 @@ article
       p
         a
           margin: 0
+
+    &.about
+      img
+        float: none
+        width: auto
+
+    &.contact
+      width: 390px
+      height: auto
+
+      &.map
+        float: right
 
     h1
       color: #333
