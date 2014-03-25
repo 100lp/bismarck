@@ -1,3 +1,4 @@
+= render 'layouts/gallery_controls'
 .centered.icons
   .znachki.mebel
     #tabs
@@ -7,19 +8,19 @@
             .bibble
             %p БИБЛИОТЕКИ
         %li
-          %a{href: "#tabs-2"}
+          %a{href: "#cloakroom"}
             .cloakroom
             %p ГАРДЕРОБНЫЕ
         %li
-          %a{href: "#tabs-3"}
+          %a{href: "#cupboard"}
             .cupboard
             %p ШКАФЫ
         %li
-          %a{href: "#tabs-4"}
+          %a{href: "#hall"}
             .hall
             %p ПРИХОЖИЕ
         %li
-          %a{href: "#tabs-5"}
+          %a{href: "#kids"}
             .kids
             %p ДЕТСКИЕ
         %li
@@ -27,24 +28,45 @@
             .kitchen
             %p КУХНИ
         %li.last-child
-          %a{href: "#tabs-7"}
+          %a{href: "#lounge"}
             .lounge
             %p ГОСТИННЫЕ
 
         #bibble
-          = image_tag 'korpus_mini/bibble/1.jpg'
-          = image_tag 'korpus_mini/bibble/2.jpg'
-          = image_tag 'korpus_mini/bibble/3.jpg'
-          = image_tag 'korpus_mini/bibble/4.jpg'
-          = image_tag 'korpus_mini/bibble/5.jpg'
-          = image_tag 'korpus_mini/bibble/6.jpg'
-          = image_tag 'korpus_mini/bibble/7.jpg'
-          = image_tag 'korpus_mini/bibble/8.jpg'
-          = image_tag 'korpus_mini/bibble/9.jpg'
-        #tabs-2
-          %p Morbi tincidunt
-        #tabs-3
-          %p Mauris eleifend est
+          .images_group
+            - @bibble = "bibble"
+            #links
+              - (1..27).each do |num|
+                = link_to image_path("#{@korpus}/#{@bibble}/#{num}.jpg") do
+                  = image_tag "#{@korpus_mini}/#{@bibble}/#{num}.jpg"
+        #cloakroom
+          .images_group
+            - @cloakroom = "cloakroom"
+            #links
+              - (1..27).each do |num|
+                = link_to image_path("#{@korpus}/#{@cloakroom}/#{num}.jpg") do
+                  = image_tag "#{@korpus_mini}/#{@cloakroom}/#{num}.jpg"
+        #cupboard
+          .images_group
+            - @cupboard = "cupboard"
+            #links
+              - (1..27).each do |num|
+                = link_to image_path("#{@korpus}/#{@cupboard}/#{num}.jpg") do
+                  = image_tag "#{@korpus_mini}/#{@cupboard}/#{num}.jpg"
+        #hall
+          .images_group
+            - @hall = "hall"
+            #links
+              - (1..27).each do |num|
+                = link_to image_path("#{@korpus}/#{@hall}/#{num}.jpg") do
+                  = image_tag "#{@korpus_mini}/#{@hall}/#{num}.jpg"
+        #kids
+          .images_group
+            - @kids = "kids"
+            #links
+              - (1..21).each do |num|
+                = link_to image_path("#{@korpus}/#{@kids}/#{num}.jpg") do
+                  = image_tag "#{@korpus_mini}/#{@kids}/#{num}.jpg"
         #kitchen
           .tab_content
             .tab_left
@@ -55,5 +77,13 @@
               = image_tag 'kitchen_nowtime.jpg'
               %p
                 СОВРЕМЕННЫЕ
+
+        #lounge
+          .images_group
+            - @lounge = "lounge"
+            #links
+              - (1..27).each do |num|
+                = link_to image_path("#{@korpus}/#{@lounge}/#{num}.jpg") do
+                  = image_tag "#{@korpus_mini}/#{@lounge}/#{num}.jpg"
 
 

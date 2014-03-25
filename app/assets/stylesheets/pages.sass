@@ -1,14 +1,21 @@
+#blueimp-gallery
+  h3, a, ol
+    display: block
+
 .centered
   .znachki
     text-align: center
     padding-bottom: 50px
 
-    img
-      margin: 20px 0
+    .images_group
+      #links
+        a
+          display: inline-block
+          img
+            margin: 20px 0
 
-      &:nth-child(3n + 2)
-        margin-left: 40px
-        margin-right: 40px
+          &:nth-child(3n + 2)
+            margin: 0 50px
     li
       display: inline-block
       width: 110px

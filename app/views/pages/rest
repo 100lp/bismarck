@@ -1,0 +1,81 @@
+            -# #links
+            -#   = link_to image_path("korpus/bibble/1.jpg") do
+            -#     = image_tag 'korpus_mini/bibble/1.jpg'
+
+            -#   = link_to image_path("korpus/bibble/2.jpg") do
+            -#     = image_tag 'korpus_mini/bibble/2.jpg'
+
+            -#   = link_to image_path("korpus/bibble/3.jpg") do
+            -#     = image_tag 'korpus_mini/bibble/3.jpg'
+
+            -#   = link_to image_path("korpus/bibble/4.jpg") do
+            -#     = image_tag 'korpus_mini/bibble/4.jpg'
+
+            -#   = link_to image_path("korpus/bibble/5.jpg") do
+            -#     = image_tag 'korpus_mini/bibble/5.jpg'
+
+            -#   = link_to image_path("korpus/bibble/6.jpg") do
+            -#     = image_tag 'korpus_mini/bibble/6.jpg'
+
+            -#   = link_to image_path("korpus/bibble/7.jpg") do
+            -#     = image_tag 'korpus_mini/bibble/7.jpg'
+
+            -#   = link_to image_path("korpus/bibble/8.jpg") do
+            -#     = image_tag 'korpus_mini/bibble/8.jpg'
+
+            -#   = link_to image_path("korpus/bibble/9.jpg") do
+            -#     = image_tag 'korpus_mini/bibble/9.jpg'
+
+            -#   = link_to image_path("korpus/bibble/10.jpg") do
+            -#     = image_tag 'korpus_mini/bibble/10.jpg'
+
+            -#   = link_to image_path("korpus/bibble/11.jpg") do
+            -#     = image_tag 'korpus_mini/bibble/11.jpg'
+
+            -#   = link_to image_path("korpus/bibble/12.jpg") do
+            -#     = image_tag 'korpus_mini/bibble/12.jpg'
+
+            -#   = link_to image_path("korpus/bibble/13.jpg") do
+            -#     = image_tag 'korpus_mini/bibble/13.jpg'
+
+            -#   = link_to image_path("korpus/bibble/14.jpg") do
+            -#     = image_tag 'korpus_mini/bibble/14.jpg'
+
+            -#   = link_to image_path("korpus/bibble/15.jpg") do
+            -#     = image_tag 'korpus_mini/bibble/15.jpg'
+
+            -#   = link_to image_path("korpus/bibble/16.jpg") do
+            -#     = image_tag 'korpus_mini/bibble/16.jpg'
+
+            -#   = link_to image_path("korpus/bibble/17.jpg") do
+            -#     = image_tag 'korpus_mini/bibble/17.jpg'
+
+            -#   = link_to image_path("korpus/bibble/18.jpg") do
+            -#     = image_tag 'korpus_mini/bibble/18.jpg'
+
+            -#   = link_to image_path("korpus/bibble/19.jpg") do
+            -#     = image_tag 'korpus_mini/bibble/19.jpg'
+
+            -#   = link_to image_path("korpus/bibble/20.jpg") do
+            -#     = image_tag 'korpus_mini/bibble/20.jpg'
+
+            -#   = link_to image_path("korpus/bibble/21.jpg") do
+            -#     = image_tag 'korpus_mini/bibble/21.jpg'
+
+            -#   = link_to image_path("korpus/bibble/22.jpg") do
+            -#     = image_tag 'korpus_mini/bibble/22.jpg'
+
+            -#   = link_to image_path("korpus/bibble/23.jpg") do
+            -#     = image_tag 'korpus_mini/bibble/23.jpg'
+
+            -#   = link_to image_path("korpus/bibble/24.jpg") do
+            -#     = image_tag 'korpus_mini/bibble/24.jpg'
+
+            -#   = link_to image_path("korpus/bibble/25.jpg") do
+            -#     = image_tag 'korpus_mini/bibble/25.jpg'
+
+            -#   = link_to image_path("korpus/bibble/26.jpg") do
+            -#     = image_tag 'korpus_mini/bibble/26.jpg'
+
+            -#   = link_to image_path("korpus/bibble/27.jpg") do
+            -#     = image_tag 'korpus_mini/bibble/27.jpg'
