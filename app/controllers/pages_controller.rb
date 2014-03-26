@@ -17,9 +17,4 @@ class PagesController < ApplicationController
   def contact
   end
 
-  # under nav
-
-  def kitchen
-  end
-
 end

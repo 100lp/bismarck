@@ -1,0 +1,12 @@
+%ul
+  - { :bibble => "БИБЛИОТЕКИ", :cloakroom => "ГАРДЕРОБНЫЕ", :cupboard => "ШКАФЫ", :hall => "ПРИХОЖИЕ", :kids => "ДЕТСКИЕ", :kitchen => "КУХНИ", :lounge => "ГОСТИННЫЕ"}.each do |type, name|
+    %li
+      - path = send("mebel_#{type}_path")
+      - if current_page? path
+        %a.active
+          %div{ class: type }
+          %p= name
+      - else
+        = link_to send("mebel_#{type}_path") do
+          %div{ class: type }
+          %p= name

@@ -1,0 +1,7 @@
+#cupboard
+  .images_group
+    - @cupboard = "cupboard"
+    #links
+      - (1..27).each do |num|
+        = link_to image_path("#{@korpus}/#{@cupboard}/#{num}.jpg") do
+          = image_tag "#{@korpus_mini}/#{@cupboard}/#{num}.jpg"

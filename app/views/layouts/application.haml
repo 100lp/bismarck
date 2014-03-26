@@ -7,7 +7,6 @@
     = csrf_meta_tags
     %script{src: "//code.jquery.com/jquery-1.9.1.js"}
     %script{src: "//code.jquery.com/ui/1.10.4/jquery-ui.js"}
-    -# %link#theme{href: "http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/themes/south-street/jquery-ui.css", rel: "stylesheet"}
     %link{href: "http://blueimp.github.io/Gallery/css/blueimp-gallery.min.css", rel: "stylesheet"}
 
   %body
@@ -20,7 +19,7 @@
       %nav
         = render 'layouts/nav'
     #content
-      = yield
+      = content_for?(:application_layout) ? yield(:application_layout)  : yield
     %footer
       %nav
         = render 'layouts/footer_nav'

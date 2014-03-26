@@ -1,0 +1,9 @@
+#lounge
+  .images_group
+    - @lounge = "lounge"
+    #links
+      - rage = (1..27).to_a
+      - rage.delete(9)
+      - rage.each do |num|
+        = link_to image_path("#{@korpus}/#{@lounge}/#{num}.jpg") do
+          = image_tag "#{@korpus_mini}/#{@lounge}/#{num}.jpg"

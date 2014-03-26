@@ -1,3 +1,32 @@
+.accessories
+  background: url(image_path("icons/accessories.png")) no-repeat center top
+.armchair
+  background: url(image_path("icons/armchair.png")) no-repeat center top
+.chair
+  background: url(image_path("icons/chair.png")) no-repeat center top
+.light
+  background: url(image_path("icons/light.png")) no-repeat center top
+.sofa
+  background: url(image_path("icons/sofa.png")) no-repeat center top
+.table
+  background: url(image_path("icons/table.png")) no-repeat center top
+.sundry
+  background: url(image_path("icons/sundry.png")) no-repeat center top
+.bibble
+  background: url(image_path("furniture/bibble.png")) no-repeat center top
+.cloakroom
+  background: url(image_path("furniture/cloakroom.png")) no-repeat center top
+.cupboard
+  background: url(image_path("furniture/cupboard.png")) no-repeat center top
+.hall
+  background: url(image_path("furniture/hall.png")) no-repeat center top
+.kids
+  background: url(image_path("furniture/kids.png")) no-repeat center top
+.lounge
+  background: url(image_path("furniture/lounge.png")) no-repeat center top
+.kitchen
+  background: url(image_path("furniture/kitchen.png")) no-repeat center top
+
 #blueimp-gallery
   h3, a, ol
     display: block
@@ -11,6 +40,7 @@
       #links
         a
           display: inline-block
+
           img
             margin: 20px 0
 
@@ -38,69 +68,23 @@
           color: gray
           margin-top: 20px
 
-        .accessories
-          background: url(image_path("icons/accessories.png")) no-repeat center top
-        .armchair
-          background: url(image_path("icons/armchair_b.png")) no-repeat center top
-        .chair
-          background: url(image_path("icons/chair_b.png")) no-repeat center top
-        .light
-          background: url(image_path("icons/light_b.png")) no-repeat center top
-        .sofa
-          background: url(image_path("icons/sofa_b.png")) no-repeat center top
-        .table
-          background: url(image_path("icons/table_b.png")) no-repeat center top
-        .sundry
-          background: url(image_path("icons/sundry_b.png")) no-repeat center top
-        .bibble
-          background: url(image_path("furniture/bibble_b.png")) no-repeat center top
-        .cloakroom
-          background: url(image_path("furniture/cloakroom_b.png")) no-repeat center top
-        .cupboard
-          background: url(image_path("furniture/cupboard_b.png")) no-repeat center top
-        .hall
-          background: url(image_path("furniture/hall_b.png")) no-repeat center top
-        .kids
-          background: url(image_path("furniture/kids_b.png")) no-repeat center top
-        .lounge
-          background: url(image_path("furniture/lounge_b.png")) no-repeat center top
-        .kitchen
-          background: url(image_path("furniture/kitchen_b.png")) no-repeat center top
+        &.active
+          &:hover
+            cursor: default
+          div
+            background-position: center bottom
+          p
+            color: black
 
         &:hover
           cursor: pointer
 
+          div
+            background-position: center bottom
+
           p
             color: black
 
-          .accessories
-            background-position: center bottom
-          .armchair
-            background: url(image_path("icons/armchair.png")) no-repeat center top
-          .chair
-            background: url(image_path("icons/chair.png")) no-repeat center top
-          .light
-            background: url(image_path("icons/light.png")) no-repeat center top
-          .sofa
-            background: url(image_path("icons/sofa.png")) no-repeat center top
-          .table
-            background: url(image_path("icons/table.png")) no-repeat center top
-          .sundry
-            background: url(image_path("icons/sundry.png")) no-repeat center top
-          .bibble
-            background: url(image_path("furniture/bibble.png")) no-repeat center top
-          .cloakroom
-            background: url(image_path("furniture/cloakroom.png")) no-repeat center top
-          .cupboard
-            background: url(image_path("furniture/cupboard.png")) no-repeat center top
-          .hall
-            background: url(image_path("furniture/hall.png")) no-repeat center top
-          .kids
-            background: url(image_path("furniture/kids.png")) no-repeat center top
-          .lounge
-            background: url(image_path("furniture/lounge.png")) no-repeat center top
-          .kitchen
-            background: url(image_path("furniture/kitchen.png")) no-repeat center top
   .mebel
     li
       width: 110px
@@ -186,16 +170,16 @@ article
         &:hover
           color: #555
 
-#tabs
-  .tab_content
-    padding: 50px
+.tab_content
+  padding: 50px
 
-    div
-      display: inline-block
-      margin-right: 50px
+  div
+    display: inline-block
+    margin-right: 50px
 
-      &:last-child
-        margin: 0
+    &:last-child
+      margin: 0
 
-      p
-        color: gray
+    p
+      color: gray
+

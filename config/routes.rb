@@ -11,7 +11,14 @@ Bismarck::Application.routes.draw do
   get '/contact', to: 'pages#contact'
 
   # under nav
-  get '/mebel/kitchen', to: 'pages#kitchen'
+  get '/mebel/bibble', to: 'mebels#bibble'
+  get '/mebel/cloakroom', to: 'mebels#cloakroom'
+  get '/mebel/cupboard', to: 'mebels#cupboard'
+  get '/mebel/hall', to: 'mebels#hall'
+  get '/mebel/kids', to: 'mebels#kids'
+  get '/mebel/kitchen', to: 'mebels#kitchen'
+  get '/mebel/lounge', to: 'mebels#lounge'
+
 
   # articles
   get '/article-01', to: 'articles#article_01'
