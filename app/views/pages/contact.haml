@@ -29,5 +29,5 @@
         %br
         Юр. Адрес: 197342, Санкт-Петербург, ул. Ланское шоссе, д.27, лит. А, пом-1Н
         %br
-    .text.contact.map
-      ok
+    .text.contact.map{onload: "initialize()"}
+      = render 'layouts/map'

@@ -19,4 +19,3 @@ $ ->
     links = @getElementsByTagName("a")
     blueimp.Gallery links, options
     return
-
