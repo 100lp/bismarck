@@ -7,8 +7,6 @@ class PagesController < ApplicationController
   end
 
   def mebel
-    @korpus = "korpus"
-    @korpus_mini = "korpus_mini"
   end
 
   def icons
