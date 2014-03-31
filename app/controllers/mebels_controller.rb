@@ -1,6 +1,10 @@
 class MebelsController < ApplicationController
   layout 'mebels'
 
+  def index
+    render 'kitchen'
+  end
+
   def bibble
   end
 

@@ -6,7 +6,7 @@ Bismarck::Application.routes.draw do
 
   # navigation
   get '/about', to: 'pages#about'
-  get '/mebel', to: 'pages#mebel'
+  get '/mebel', to: 'mebels#index'
   get '/icons', to: 'pages#icons'
   get '/contact', to: 'pages#contact'
 

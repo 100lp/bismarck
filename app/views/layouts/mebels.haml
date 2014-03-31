@@ -4,3 +4,7 @@
     .znachki.mebel
       = render 'layouts/dop_nav'
       = yield
+
+  - content_for :gallery do
+    %script{src: "http://blueimp.github.io/Gallery/js/jquery.blueimp-gallery.min.js"}
+    %script{src: "/gallery/js/blueimp-gallery.min.js"}
