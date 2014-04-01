@@ -23,6 +23,12 @@ class MebelsController < ApplicationController
   def kitchen
   end
 
+  def classic
+  end
+
+  def timenow
+  end
+
   def lounge
   end
 

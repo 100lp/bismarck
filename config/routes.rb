@@ -17,6 +17,8 @@ Bismarck::Application.routes.draw do
   get '/mebel/hall', to: 'mebels#hall'
   get '/mebel/kids', to: 'mebels#kids'
   get '/mebel/kitchen', to: 'mebels#kitchen'
+  get '/mebel/kitchen/classic', to: 'mebels#classic'
+  get '/mebel/kitchen/timenow', to: 'mebels#timenow'
   get '/mebel/lounge', to: 'mebels#lounge'
 
 

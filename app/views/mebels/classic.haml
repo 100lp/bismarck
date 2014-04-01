@@ -1,0 +1,7 @@
+.images_group
+  - @kitchen = "kitchen"
+  - @classic = "classic"
+  #links
+    - (1..42).each do |num|
+      = link_to image_path("#{@korpus}/#{@kitchen}/#{@classic}/#{num}.jpg") do
+        = image_tag "#{@korpus_mini}/#{@kitchen}/#{@classic}/#{num}.jpg"
