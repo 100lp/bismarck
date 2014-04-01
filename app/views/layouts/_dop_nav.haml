@@ -2,8 +2,8 @@
   - { :kitchen => "КУХНИ", :cupboard => "ШКАФЫ", :lounge => "ГОСТИННЫЕ", :kids => "ДЕТСКИЕ", :cloakroom => "ГАРДЕРОБНЫЕ",  :hall => "ПРИХОЖИЕ", :bibble => "БИБЛИОТЕКИ" }.each do |type, name|
     %li
       - path = type == :kitchen ?  mebel_path : send("mebel_#{type}_path")
-      - if current_page? path
-        %a.active
+      - if current_page?(path) or (type != :kitchen and request.fullpath.include?(path)) or (type == :kitchen and request.fullpath.include?('kitchen'))
+        %a{href: path, class: 'active'}
           %div{ class: type }
           %p= name
       - else
