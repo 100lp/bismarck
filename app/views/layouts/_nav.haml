@@ -1,6 +1,6 @@
 %ul
-  =nav_link 'ГЛАВНАЯ', root_path, class: 'test'
-  =nav_link 'О КОМПАНИИ', about_path, class: 'test'
-  =nav_link 'КОРПУСНАЯ МЕБЕЛЬ', mebel_path, class: 'test'
-  =nav_link 'ИКОНЫ ДИЗАЙНА', icons_path, class: 'test'
+  =nav_link 'ГЛАВНАЯ', root_path, 'data-no-turbolink' => true
+  =nav_link 'О КОМПАНИИ', about_path, 'data-no-turbolink' => true
+  =nav_link 'КОРПУСНАЯ МЕБЕЛЬ', mebel_path, 'data-no-turbolink' => true
+  =nav_link 'ИКОНЫ ДИЗАЙНА', icons_path, 'data-no-turbolink' => true
   =nav_link 'КОНТАКТЫ', contact_path, 'data-no-turbolink' => true
