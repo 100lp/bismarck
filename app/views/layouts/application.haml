@@ -25,7 +25,12 @@
       = content_for?(:application_layout) ? yield(:application_layout)  : yield
     %footer
       %nav
-        = render 'layouts/footer_nav'
+        - if @current_page.include? "mebel" and @current_page.exclude? "kitchen"
+          = render 'layouts/footer_mebel_nav'
+        - elsif @current_page.include? "kitchen"
+          = render 'layouts/footer_kitchen_nav'
+        - else
+          = render 'layouts/footer_nav'
       .border
       %aside
         .centered

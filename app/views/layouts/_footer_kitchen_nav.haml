@@ -1,0 +1,6 @@
+%div
+  =link_to 'назад', "#{@kitchen_nav[(@kitchen_cp_index-1)%(@kitchen_nav.length)]}", 'data-no-turbolink' => true
+%div
+  =link_to 'наверх', '#top', id: 'top-link'
+%div
+  =link_to 'вперед', "#{@kitchen_nav[(@kitchen_cp_index+1)%(@kitchen_nav.length)]}", 'data-no-turbolink' => true

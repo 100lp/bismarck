@@ -1,0 +1,6 @@
+%div
+  =link_to 'назад', "#{@mebel_nav[(@mebel_cp_index-1)%(@mebel_nav.length)]}", 'data-no-turbolink' => true
+%div
+  =link_to 'наверх', '#top', id: 'top-link'
+%div
+  =link_to 'вперед', "#{@mebel_nav[(@mebel_cp_index+1)%(@mebel_nav.length)]}", 'data-no-turbolink' => true
