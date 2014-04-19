@@ -1,6 +1,10 @@
+- @nav = %W[ #{root_path} #{about_path} #{mebel_path} #{icons_path} #{contact_path} ]
+- @cp_index = @nav.index(@current_page)
+- @cp_index = @cp_index.to_i
+
 %div
-  =link_to 'назад', :back, 'data-no-turbolink' => true
+  =link_to 'назад', "#{@nav[(@cp_index-1)%(@nav.length)]}", 'data-no-turbolink' => true
 %div
   =link_to 'наверх', '#top', id: 'top-link'
 %div
-  =link_to 'вперед', :back, 'data-no-turbolink' => true
+  =link_to 'вперед', "#{@nav[(@cp_index+1)%(@nav.length)]}", 'data-no-turbolink' => true
