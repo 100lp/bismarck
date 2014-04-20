@@ -23,9 +23,9 @@ Bismarck::Application.routes.draw do
 
 
   # articles
-  get '/article-01', to: 'articles#article_01'
-  get '/article-02', to: 'articles#article_02'
-  get '/article-03', to: 'articles#article_03'
-  get '/article-04', to: 'articles#article_04'
+  get '/article-01', to: 'articles#article01', as: :article01
+  get '/article-02', to: 'articles#article02', as: :article02
+  get '/article-03', to: 'articles#article03', as: :article03
+  get '/article-04', to: 'articles#article04', as: :article04
 
 end

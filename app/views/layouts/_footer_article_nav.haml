@@ -1,0 +1,6 @@
+%div
+  =link_to 'назад', "#{@article_nav[(@article_cp_index-1)%(@article_nav.length)]}", 'data-no-turbolink' => true
+%div
+  =link_to 'наверх', '#top', id: 'top-link'
+%div
+  =link_to 'вперед', "#{@article_nav[(@article_cp_index+1)%(@article_nav.length)]}", 'data-no-turbolink' => true

@@ -29,6 +29,8 @@
           = render 'layouts/footer_mebel_nav'
         - elsif @current_page.include? "kitchen"
           = render 'layouts/footer_kitchen_nav'
+        - elsif @current_page.include? "article"
+          = render 'layouts/footer_article_nav'
         - else
           = render 'layouts/footer_nav'
       .border

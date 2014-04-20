@@ -1,12 +1,12 @@
 class ArticlesController < ApplicationController
 
-  def article_01
+  def article01
   end
-  def article_02
+  def article02
   end
-  def article_03
+  def article03
   end
-  def article_04
+  def article04
   end
 
 end
