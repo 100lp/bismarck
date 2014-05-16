@@ -105,6 +105,7 @@
 
 
 article
+  overflow: hidden
   padding: 30px 35px
   margin: 25px 0
   +box-shadow(inset 0 0 4px #555)
@@ -116,14 +117,14 @@ article
 
   img
     float: left
-    margin: 0 20px 0 0
+    margin: 0
     width: 213px
     border: 1px solid #AEAEAE
 
   .text
+    float: right
     border: 1px solid #AEAEAE
     padding: 25px
-    display: inline-block
     background: white
     position: relative
     height: 214px
@@ -145,6 +146,7 @@ article
 
       img
         margin-bottom: 20px
+        margin-right: 20px
 
       p
         a
@@ -158,6 +160,7 @@ article
     &.contact
       width: 390px
       height: 390px
+      float: left
 
       p
         font-family: PF Din TextPro Regular
