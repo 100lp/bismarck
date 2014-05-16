@@ -95,11 +95,14 @@ header
 
       li
         float: left
-        margin-right: 86px
+        margin: 0 42px
         height: 21px
 
+        &:first-child
+          margin-left: 0
+
         &:last-child
-          margin: 0
+          margin-right: 0
           float: right
 
         &.current
@@ -111,7 +114,7 @@ header
         a
           color: #EAEAEA
           font-size: 16.5px
-          padding: 23px 0
+          padding: 24px 0
 
           &:hover, &:focus
             +text-shadow(0 0 3px white)
